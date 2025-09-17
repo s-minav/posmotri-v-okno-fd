@@ -332,3 +332,6 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
 }
+body {
+  overflow: hidden;
+}

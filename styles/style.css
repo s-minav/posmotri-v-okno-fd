@@ -105,7 +105,7 @@ ol {
 
 .search-form__textfield {
   min-width: 225px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   border-right-color: transparent;
   border-left-color: transparent;
   padding: 1px 0;
@@ -145,7 +145,7 @@ ol {
 }
 
 .search-form__checkbox-list .search-form__label:has(:focus-visible) {
-  outline: 1px #fff solid;
+  outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
@@ -160,7 +160,7 @@ ol {
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
-  border: 1px #fff solid;
+  border: 1px solid #fff;
   padding: 1px;
   cursor: pointer;
 }
@@ -175,9 +175,9 @@ ol {
 }
 
 .button {
-  border: 1px white solid;
+  border: 1px solid currentColor;
   padding: 6px 0;
-  color: #ffff;
+  color: #fff;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -277,6 +277,11 @@ ol {
   line-height: 16.2px;
   text-align: left;
   text-overflow: ellipsis;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 4; 
+  line-clamp: 4; 
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
